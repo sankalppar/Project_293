@@ -1,3 +1,9 @@
+/*
+    Class : complex_num
+    Written By : Sankalp Parashar
+    This file contains the implementation for the class complex_num defined for
+    handling complex numbers with greater ease.
+*/
 #include <complex.hpp>
 
 complex_num::complex_num(long double R, long double I)

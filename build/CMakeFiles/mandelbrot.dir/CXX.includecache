@@ -14,3 +14,9 @@ iostream
 complex.hpp
 -
 
+/home/sankalp/cs293/project/src/mandelbrot.cpp
+SFML/Graphics.hpp
+-
+complex.hpp
+-
+
