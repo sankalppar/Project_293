@@ -1,0 +1,1 @@
+/usr/bin/c++   -fopenmp -fopenmp   CMakeFiles/complex_num.dir/src/complex.cpp.o  -o complex_num 

@@ -1,0 +1,3 @@
+/home/sankalp/cs293/project/build/CMakeFiles/rebuild_cache.dir
+/home/sankalp/cs293/project/build/CMakeFiles/edit_cache.dir
+/home/sankalp/cs293/project/build/CMakeFiles/mandelbrot.dir
