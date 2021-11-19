@@ -44,7 +44,7 @@ void Mandelbrot_util::mandelbrot_set(sf::VertexArray& vertexarray, int pixel_shi
                     break;
             }
 
-            //Setting the colour of the values for which the sequence diverged
+            //Setting the color of the values for which the sequence diverged
             //based on how soon it diverged for color scheme 1
             if (color_scheme == 1)
             {
@@ -68,6 +68,8 @@ void Mandelbrot_util::mandelbrot_set(sf::VertexArray& vertexarray, int pixel_shi
                 }
             }
 
+            //Setting the color of the values for which the sequence diverged
+            //based on how soon it diverged for color scheme 2
             if (color_scheme == 2)
             {
                 if (iterations < precision / 4.0)
@@ -89,6 +91,9 @@ void Mandelbrot_util::mandelbrot_set(sf::VertexArray& vertexarray, int pixel_shi
                     vertexarray[i*width + j].color = color;
                 }
             }
+
+            //Setting the color of the values for which the sequence diverged
+            //based on how soon it diverged for color scheme 3
             if (color_scheme == 3)
             {
                 if (iterations < precision / 4.0)

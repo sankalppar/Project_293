@@ -5,6 +5,9 @@
     on complex numbers so that they can be used easily in mandelbrot.cpp
 */
 
+#ifndef COMPLEX_NUM
+#define COMPLEX_NUM
+
 #include <iostream>
 
 class complex_num
@@ -28,3 +31,5 @@ class complex_num
     long double imag();
     complex_num conjugate();
 };
+
+#endif

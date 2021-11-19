@@ -5,6 +5,9 @@
     utility functions used in drawing a mandelbrot set
 */
 
+#ifndef MANDELBROT_UTIL
+#define MANDELBROT_UTIL
+
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
@@ -15,3 +18,5 @@ class Mandelbrot_util
                                    int pixel_shift_y, int precision, float zoom,
                                    const int width, const int height, int color_scheme);
 };
+
+#endif

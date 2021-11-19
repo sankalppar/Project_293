@@ -7,6 +7,7 @@ Written By : Sankalp Parashar(200050127)
 #include <cassert>
 #include <chrono>
 #include <thread>
+#include <limits>
 #include <mandelbrot_util.hpp>
 
 
@@ -87,6 +88,8 @@ int main()
         //Waiting for left click event for zooming in
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
         {
+            //Making sure the zoom value is within the maximum limit for float
+            assert(zoom < std::numeric_limits<float>::max());
             sf::Vector2i position = sf::Mouse::getPosition(window);
             x_shift -= position.x - x_shift;
             y_shift -= position.y - y_shift;
@@ -223,6 +226,8 @@ int main()
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2))
         {
+            //Making sure the zoom is within the maximum limit for float
+            assert(zoom < std::numeric_limits<float>::max());
             for (int j = 0; j < 2; j++)
             {
                 //Setting the center for the zoom
@@ -257,6 +262,8 @@ int main()
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num3))
         {
+            //Making sure the zoom is within the maximum limit for float
+            assert(zoom < std::numeric_limits<float>::max());
             for (int j = 0; j < 3; j++)
             {
                 //Setting the center for the zoom
@@ -291,6 +298,8 @@ int main()
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num4))
         {
+            //Making sure the zoom is within the maximum limit for float
+            assert(zoom < std::numeric_limits<float>::max());
             for (int j = 0; j < 4; j++)
             {
                 //Setting the center for the zoom
@@ -325,6 +334,8 @@ int main()
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num5))
         {
+            //Making sure the zoom is within the maximum limit for float
+            assert(zoom < std::numeric_limits<float>::max());
             for (int j = 0; j < 5; j++)
             {
                 //Setting the center for the zoom
@@ -359,6 +370,8 @@ int main()
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num6))
         {
+            //Making sure the zoom is within the maximum limit for float
+            assert(zoom < std::numeric_limits<float>::max());
             for (int j = 0; j < 6; j++)
             {
                 //Setting the center for the zoom
@@ -393,6 +406,8 @@ int main()
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num7))
         {
+            //Making sure the zoom is within the maximum limit for float
+            assert(zoom < std::numeric_limits<float>::max());
             for (int j = 0; j < 7; j++)
             {
                 //Setting the center for the zoom
@@ -427,6 +442,8 @@ int main()
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num8))
         {
+            //Making sure the zoom is within the maximum limit for float
+            assert(zoom < std::numeric_limits<float>::max());
             for (int j = 0; j < 8; j++)
             {
                 //Setting the center for the zoom
@@ -461,6 +478,8 @@ int main()
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num9))
         {
+            //Making sure the zoom is within the maximum limit for float
+            assert(zoom < std::numeric_limits<float>::max());
             for (int j = 0; j < 9; j++)
             {
                 //Setting the center for the zoom
@@ -495,6 +514,8 @@ int main()
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num0))
         {
+            //Making sure the zoom is within the maximum limit for float
+            assert(zoom < std::numeric_limits<float>::max());
             for (int j = 0; j < 10; j++)
             {
                 //Setting the center for the zoom
