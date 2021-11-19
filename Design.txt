@@ -1,0 +1,56 @@
+Header Files
+------------
+There are two header files - complex.hpp and mandelbrot_util.hpp. The first file
+contains important declarations required for performing binary as well as unary
+operations on complex numbers. The second file mandelbrot_util contains a static
+function mandelbrot_set which sets the color of the pixels based on center position,
+precision, zoom value, width, height and the color scheme we are using. It stores
+this pixel information in a data structure called vertexarray which stores info
+related to the pixels in form of a 1-D array. The header files are located in the
+include directory
+
+Source Files
+------------
+There are three source files placed in the src directory - complex.cpp,
+mandelbrot_util.cpp and mandelbrot.cpp. The first file contains class definitions
+for the operations on complex numbers as required by mandelbrot_util.cpp. The second
+file uses functions from complex.cpp to decide the color of each pixel and store
+it in a vertexvector. Finally the file mandelbrot.cpp contains the main function
+which starts the SFML window and waits in a loop for the user to press any of the
+controls, whenever a button is pressed it calls the mandelbrot_set function from
+the file mandelbrot_util.cpp with appropriate parameters and the vertexvector is
+then plotted on the window. The controls for various operations are mentioned in
+Readme.md.
+
+Data Structures
+---------------
+The code primarily makes use of 2-D as well as 1-D arrays. Several non conventional
+data structures which are part of the SFML Library have been used as well and a
+brief overview of those data structures is as follows :
+Vertex - A single pixel information in SFML is stored in a data structure called
+         Vertex. This stores the position, color and texture coordinates of the
+         pixel.
+VertexArray - This is a container which stores three important parameters related
+              to any pixel - color, position and texture coordinates.
+Color - This is a paramter to Vertex this can be set directly using the syntax
+        vertex.color = sf::Color::Red or it can be set using the second parameter
+        of the constructor of the vertex.
+Position - This is also a parameter to a Vertex. Similar to Color this can also
+           be set in 2 ways. The explicit way of setting it is :
+           vertex.position = sf::Vector2f(x, y)
+Apart from these readymade data structures I have designed the class complex_num
+which serves as a pair data structure for all practical purposes. This data structure
+has been used in the function mandelbrot_set to determine the number of iterations
+it takes for complex number at any pixel to diverge.
+
+Additional Files
+----------------
+Apart from the header and source files I have added a bash file - install.sh for
+making it easier to install SFML and setting up the system to run the project.
+It also contains Readme.md containing the basic information about the project
+and information about the available controls for navigating in the Mandelbrot plot.
+Finally it also contains a CMakeLists.txt file that can be used to generate the
+Makefile(already present in the build folder) and then run make to compile. This
+makes the file much easier to compile as the linked libraries and header files
+are all taken care of by cmake for compilation and we don't have to run a large
+command for compiling everytime we make a minor change to the project.

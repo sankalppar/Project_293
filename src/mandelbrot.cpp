@@ -48,8 +48,8 @@ int main()
     int color_scheme = 1;
 
     //Setting the amount of shift when arrow keys are pressed
-    int horizontal_shift = 20;
-    int vertical_shift = 15;
+    int horizontal_shift = 35;
+    int vertical_shift = 30;
 
     Mandelbrot_util::mandelbrot_set(pointmap, x_shift, y_shift, precision, zoom,
                                     width, height, color_scheme);
@@ -114,8 +114,8 @@ int main()
         if (sf::Mouse::isButtonPressed(sf::Mouse::Right))
         {
             sf::Vector2i position = sf::Mouse::getPosition(window);
-            x_shift += position.x - x_shift;
-            y_shift += position.y - y_shift;
+            x_shift += (position.x - x_shift)/2;
+            y_shift += (position.y - y_shift)/2;
             if(zoom >= 600.0 && precision >= 200)
             {
                 zoom /= 2.0;

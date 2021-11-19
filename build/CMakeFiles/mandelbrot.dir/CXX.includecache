@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/complex.hpp
-iostream
--
-
 ../include/mandelbrot_util.hpp
 iostream
 -
@@ -24,12 +20,6 @@ chrono
 thread
 -
 limits
--
-mandelbrot_util.hpp
--
-
-/home/sankalp/cs293/project/src/mandelbrot_util.cpp
-complex.hpp
 -
 mandelbrot_util.hpp
 -
