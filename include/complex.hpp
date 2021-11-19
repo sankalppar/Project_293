@@ -4,6 +4,7 @@
     Header file for complex.cpp containing declarations for standard operators
     on complex numbers so that they can be used easily in mandelbrot.cpp
 */
+
 #include <iostream>
 
 class complex_num

@@ -177,6 +177,33 @@ src/mandelbrot.cpp.s:
 	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/src/mandelbrot.cpp.s
 .PHONY : src/mandelbrot.cpp.s
 
+src/mandelbrot_util.o: src/mandelbrot_util.cpp.o
+
+.PHONY : src/mandelbrot_util.o
+
+# target to build an object file
+src/mandelbrot_util.cpp.o:
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/src/mandelbrot_util.cpp.o
+.PHONY : src/mandelbrot_util.cpp.o
+
+src/mandelbrot_util.i: src/mandelbrot_util.cpp.i
+
+.PHONY : src/mandelbrot_util.i
+
+# target to preprocess a source file
+src/mandelbrot_util.cpp.i:
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/src/mandelbrot_util.cpp.i
+.PHONY : src/mandelbrot_util.cpp.i
+
+src/mandelbrot_util.s: src/mandelbrot_util.cpp.s
+
+.PHONY : src/mandelbrot_util.s
+
+# target to generate assembly for a file
+src/mandelbrot_util.cpp.s:
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/src/mandelbrot_util.cpp.s
+.PHONY : src/mandelbrot_util.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... src/mandelbrot.o"
 	@echo "... src/mandelbrot.i"
 	@echo "... src/mandelbrot.s"
+	@echo "... src/mandelbrot_util.o"
+	@echo "... src/mandelbrot_util.i"
+	@echo "... src/mandelbrot_util.s"
 .PHONY : help
 
 

@@ -10,13 +10,25 @@
 iostream
 -
 
-/home/sankalp/cs293/project/src/complex.cpp
-complex.hpp
+../include/mandelbrot_util.hpp
+iostream
+-
+SFML/Graphics.hpp
 -
 
 /home/sankalp/cs293/project/src/mandelbrot.cpp
-SFML/Graphics.hpp
+cassert
 -
+chrono
+-
+thread
+-
+mandelbrot_util.hpp
+-
+
+/home/sankalp/cs293/project/src/mandelbrot_util.cpp
 complex.hpp
+-
+mandelbrot_util.hpp
 -
 

@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sankalp/cs293/project/src/complex.cpp" "/home/sankalp/cs293/project/build/CMakeFiles/mandelbrot.dir/src/complex.cpp.o"
   "/home/sankalp/cs293/project/src/mandelbrot.cpp" "/home/sankalp/cs293/project/build/CMakeFiles/mandelbrot.dir/src/mandelbrot.cpp.o"
+  "/home/sankalp/cs293/project/src/mandelbrot_util.cpp" "/home/sankalp/cs293/project/build/CMakeFiles/mandelbrot.dir/src/mandelbrot_util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

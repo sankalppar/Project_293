@@ -4,6 +4,10 @@
 CMakeFiles/mandelbrot.dir/src/complex.cpp.o: ../include/complex.hpp
 CMakeFiles/mandelbrot.dir/src/complex.cpp.o: ../src/complex.cpp
 
-CMakeFiles/mandelbrot.dir/src/mandelbrot.cpp.o: ../include/complex.hpp
+CMakeFiles/mandelbrot.dir/src/mandelbrot.cpp.o: ../include/mandelbrot_util.hpp
 CMakeFiles/mandelbrot.dir/src/mandelbrot.cpp.o: ../src/mandelbrot.cpp
+
+CMakeFiles/mandelbrot.dir/src/mandelbrot_util.cpp.o: ../include/complex.hpp
+CMakeFiles/mandelbrot.dir/src/mandelbrot_util.cpp.o: ../include/mandelbrot_util.hpp
+CMakeFiles/mandelbrot.dir/src/mandelbrot_util.cpp.o: ../src/mandelbrot_util.cpp
 

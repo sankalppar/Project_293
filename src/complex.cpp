@@ -4,13 +4,18 @@
     This file contains the implementation for the class complex_num defined for
     handling complex numbers with greater ease.
 */
+
 #include <complex.hpp>
+
+//Constructor for complex numbers
 
 complex_num::complex_num(long double R, long double I)
 {
     this->real = R;
     this->im = I;
 }
+
+//Defining the addition operator for complex numbers
 
 complex_num complex_num::operator+(complex_num z)
 {
@@ -20,6 +25,8 @@ complex_num complex_num::operator+(complex_num z)
     return res;
 }
 
+//Defining multiplication operatoe for complex numbers
+
 complex_num complex_num::operator*(complex_num z)
 {
     complex_num res;
@@ -28,6 +35,8 @@ complex_num complex_num::operator*(complex_num z)
     return res;
 }
 
+//Defining the subtraction operator for complex numbers
+
 complex_num complex_num::operator-(complex_num z)
 {
     complex_num res;
@@ -35,6 +44,8 @@ complex_num complex_num::operator-(complex_num z)
     res.im = this->im - z.im;
     return res;
 }
+
+//Defining the division operator for complex numbers
 
 complex_num complex_num::operator/(complex_num z)
 {
@@ -46,6 +57,8 @@ complex_num complex_num::operator/(complex_num z)
     return res;
 }
 
+//Function to return the square of the complex number
+
 complex_num complex_num::square()
 {
     complex_num res;
@@ -54,12 +67,16 @@ complex_num complex_num::square()
     return res;
 }
 
+//Function to return the modulus of the complex number
+
 long double complex_num::modulus()
 {
     long double res;
     res = this->real * this->real + this->im * this->im;
     return res;
 }
+
+//Function to return the real part of the complex number
 
 long double complex_num::real_part()
 {
@@ -68,12 +85,16 @@ long double complex_num::real_part()
     return res;
 }
 
+//Function to return the imaginary part of the complex number
+
 long double complex_num::imag()
 {
     long double res;
     res = this->im;
     return res;
 }
+
+//Function to return the conjugate of the complex number
 
 complex_num complex_num::conjugate()
 {

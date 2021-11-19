@@ -5,5 +5,9 @@ CMakeFiles/mandelbrot.dir/src/complex.cpp.o
  ../include/complex.hpp
  /home/sankalp/cs293/project/src/complex.cpp
 CMakeFiles/mandelbrot.dir/src/mandelbrot.cpp.o
- ../include/complex.hpp
+ ../include/mandelbrot_util.hpp
  /home/sankalp/cs293/project/src/mandelbrot.cpp
+CMakeFiles/mandelbrot.dir/src/mandelbrot_util.cpp.o
+ ../include/complex.hpp
+ ../include/mandelbrot_util.hpp
+ /home/sankalp/cs293/project/src/mandelbrot_util.cpp
